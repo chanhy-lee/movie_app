@@ -1,0 +1,90 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes infoAppear {
+    from {
+        margin-left: -40px;
+        opacity: 0;
+    } to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.bgImg {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    animation: fadeIn 0.7s 1 linear;
+    background-color: black;
+}
+
+.informationWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent, black);
+}
+
+.informationWrap > * {
+    animation: infoAppear 0.7s 1 linear;
+}
+
+.informationWrap .title {
+    position: absolute;
+    width: 90%;
+    top: 53%;
+    left: 8%;
+    font-size: 50px;
+    color: white;
+}
+
+.informationWrap .year {
+    position: absolute;
+    width: max-content;
+    top: 64%;
+    left: 9%;
+    font-size: 15px;
+    color: white;
+}
+
+.informationWrap .genres {
+    position: absolute;
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 64%;
+    left: 12%;
+    font-size: 15px;
+    color: white;
+}
+
+.informationWrap .genres .genre {
+    margin: 0 5.5px;
+}
+
+.informationWrap .summary {
+    position: absolute;
+    width: 80%;
+    top: 70%;
+    left: 10%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.informationWrap .link {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 50;
+    background-color: transparent;
+}

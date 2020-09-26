@@ -1,0 +1,33 @@
+.navigation {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 30px;
+    left: 40px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.navigation a {
+    color: rgb(106, 195, 230);
+    text-decoration: none;
+}
+
+.navigation .home {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 3px;
+    margin-left: -25px;
+    text-align: center;
+}
+
+.navigation .about {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    bottom: 4px;
+    margin-left: -25px;
+    text-align: center;
+}
