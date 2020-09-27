@@ -39,7 +39,7 @@
     position: absolute;
     width: 90%;
     top: 53%;
-    left: 8%;
+    margin-left: 120px;
     font-size: 50px;
     color: white;
 }
@@ -48,7 +48,7 @@
     position: absolute;
     width: max-content;
     top: 64%;
-    left: 9%;
+    margin-left: 130px;
     font-size: 15px;
     color: white;
 }
@@ -60,7 +60,7 @@
     margin: 0;
     padding: 0;
     top: 64%;
-    left: 12%;
+    margin-left: 180px;
     font-size: 15px;
     color: white;
 }
@@ -73,10 +73,11 @@
     position: absolute;
     width: 80%;
     top: 70%;
-    left: 10%;
+    margin-left: 150px;
     color: white;
     font-size: 18px;
     font-weight: 500;
+    text-indent: 15px;
 }
 
 .informationWrap .link {

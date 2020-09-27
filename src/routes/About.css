@@ -14,8 +14,8 @@
 @keyframes moveAbove {
     0% {
         top: 50%;
-        opacity: 1;
-    } 20% {
+        opacity: 0.2;
+    } 10% {
         top: 50%;
         opacity: 0;
     } 60% {
@@ -93,12 +93,12 @@
     text-align: center;
     background-color: transparent;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     z-index: 50;
 }
 
 .poster .title:hover {
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     color: black;
     background-color: rgba(255, 255, 255, 0.7);
 }

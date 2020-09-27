@@ -24,12 +24,12 @@ function Movie({ id, year, genres, title, summary, poster, trailer, bgImg }) {
                 <img className="poster" src={poster} alt={title} title={title} />
                 <h3 className="title">{title}</h3>
                 <h5 className="year">{year} |</h5>
-                <ul className="genres">
+                <div className="genres">
                     {genres.map((genre, index) => (
-                        <li className="genre" key={index}>{genre}</li>
+                        <span className="genre" key={index}>{genre}</span>
                     ))}
-                </ul>
-                <p className="summary">{summary.length > 300 ? summary.slice(0, 300) + "..." : summary}</p>
+                </div>
+                <p className="summary">{summary.length > 180 ? `${summary.slice(0, 180)}...` : summary}</p>
             </div>
         </Link>
     );

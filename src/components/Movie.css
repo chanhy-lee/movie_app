@@ -1,9 +1,22 @@
+.movies {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    height: max-content;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 50px;
+    row-gap: 50px;
+
+}
+
 .movieWrap {
     display: block;
     position: relative;
-    width: 1000px;
-    left: 50%;
-    margin-left: -500px;
+    width: 450px;
     text-decoration: none;
     color: black;
 }
@@ -20,57 +33,70 @@
 
 .movie {
     position: relative;
-    width: 1000px;
+    width: 450px;
     height: 300px;
-    left: 50%;
-    margin: 20px 0;
-    margin-left: -500px;
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
     animation: movieAppear 0.7s 1 linear;
+    transition: all 0.2s ease;
+}
+
+.movieWrap:hover > .movie {
+    background-color: white;
+    transition: all 0.2s ease;
 }
 
 .movie .poster {
     position: absolute;
     width: 100%;
     max-width: 180px;
-    left: 25px;
+    left: -25px;
     top: 5%;
     border-radius: 5px;
+    box-shadow: black 0 1px 7px;
 }
 
 .movie .title {
     position: absolute;
-    width: max-content;
-    margin-left: 220px;
+    width: 275px;
+    margin-left: 165px;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 19px;
 }
 
 .movie .year {
     position: absolute;
     width: 40px;
-    margin-left: 225px;
-    margin-top: 70px;
+    margin-left: 175px;
+    margin-top: 75px;
     font-size: 13px;
 }
 
 .movie .genres {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 0;
-    margin-left: 265px;
-    margin-top: 70px;
+    position: absolute;
+    width: 220px;
+    height: max-content;
+    margin-left: 220px;
+    margin-top: 75px;
     font-size: 13px;
 }
 
 .movie .genres .genre {
-    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    margin: 0 3px;
+    white-space: normal;
 }
 
 .movie .summary {
     position: absolute;
-    width: 700px;
-    margin-left: 220px;
+    width: 270px;
+    height: max-content;
+    margin-top: 125px;
+    margin-left: 167px;
     font-size: 17px;
+    text-indent: 15px;
+    text-align: justify;
 }
